@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# production build
+dist
+build
+
+# misc
+.env
+.DS_Store
+.vercel
+firebase-debug.log
