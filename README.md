@@ -150,11 +150,11 @@ This project is **hosted on Vercel** with automatic deployments from the main br
 
 ## 📸 Screenshots
 
-![Home Page](image.png)
-![Experience Card](image-1.png)
-![Booking](image-2.png)
-![Payment](image-3.png)
-![Confirmation](image-4.png)
+![Home Page](./screenshots/image.png)
+![Experience Card](./screenshots/image-1.png)
+![Booking](./screenshots/image-2.png)
+![Payment](./screenshots/image-3.png)
+![Confirmation](./screenshots/image-4.png)
 ---
 
 ## 🧠 Author
