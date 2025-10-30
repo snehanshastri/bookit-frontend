@@ -4,13 +4,14 @@ import { getFirestore } from "firebase/firestore";
 
 // 🔥 Your Firebase config (replace with your actual credentials from Firebase console)
 const firebaseConfig = {
-  apiKey: "AIzaSyDPkor76PD3wAXQu42sUYUUrq34WpRoxeA",
-  authDomain: "bookit-fce09.firebaseapp.com",
-  projectId: "bookit-fce09",
-  storageBucket: "bookit-fce09.firebasestorage.app",
-  messagingSenderId: "962738322617",
-  appId: "1:962738322617:web:f75aaaf0e411da29baaf68"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
+
 
 // Initialize Firebase app
 const app = initializeApp(firebaseConfig);
