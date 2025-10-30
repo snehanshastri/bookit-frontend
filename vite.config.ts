@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
+// ✅ Vercel-safe Firebase configuration
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -13,6 +13,22 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  optimizeDeps: {
+    include: [
+      "firebase/app",
+      "firebase/firestore",
+      "firebase/auth",
+      "firebase/storage"
+    ],
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+    },
+    commonjsOptions: {
+      include: [/firebase/, /node_modules/],
     },
   },
 }));
